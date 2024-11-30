@@ -11,6 +11,7 @@
     --category-bg-color: #fafafa;
     --testimonials-bg-color: #f6f6f656;
     --testimonials-box-color: #fff;
+    --footer-bg-color: rgb(22, 29, 17);
 }
 *{
     font-family: 'Lexend', sans-serif;
@@ -102,11 +103,76 @@
     color: var(--options-color);
     transition: all ease 0.3s;
 }
+/*------------ Banner -----------------*/
+.home{
+    padding: 4.5rem 0 1.5rem;
+}
+.container{
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background: rgb(2, 3, 7,0.5);
+    z-index: 1;
+}
+.container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: brightness(50%);
+}
 
+.swiper-pagination-bullet{
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 0.2rem !important;
+    background: var(--bg-color) !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+    width: 1.5rem !important;
+    background: var(--main-color) !important;
+}
+.home-text{
+    z-index: 1000;
+    padding: 0 90px;
+    position: absolute;
+    width: 50%;
+    top: 35%;
+}
+.home-text span{
+    color: var(--white-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size:12px;
+    border-radius: 3px;
+    padding: 1px 3px;
+}
+.home-text h1{
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.btn{
+    padding: 0.7rem 1.4rem;
+    background: var(--logo-color);
+    color: var(--white-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: var(--add-to-cart);
+}
 /*------------ Category --------------*/
 
 #category,
-#products-section{
+#products-section,
+#partner{
     display: flex;
     flex-direction: column;
     max-width: 1000px;
@@ -114,14 +180,16 @@
 }
 
 .category-heading,
-.product-heading{
+.product-heading,
+.partner-heading{
     display: flex;
     justify-content: space-between;
     align-items: center;  
 }
 
 .category-heading h2,
-.product-heading h2{
+.product-heading h2,
+.partner-heading h3{
     font-size: 1.56rem;
     font-weight: 700;
     color: var(--black-color);
@@ -289,9 +357,9 @@
 }
 
 .testimonials-box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
     width: 90%;
     margin-top: 40px;
 }
@@ -301,7 +369,7 @@
     padding: 30px 20px;
     border: 1px solid #f1f1f1;
     box-shadow: 2px 2px 5opx rgba(0,0,0,0.05);
-    border-radius: 0px 30px 0px 30px;
+    border-radius: 30px;
 }
 
 .testimonial-profile{
@@ -335,13 +403,111 @@
 }
 
 .rating i{
-    color: #ffcc0d
+    color: #ffcc0d;
 }
 
 .testimonials-box p{
     color: #7c7c7c;
 }
 
+/***************/
+#partner{
+    margin: 100px auto;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.logo-container img{
+    height: 55px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: all ease 0.3s;
+}
+
+.logo-container img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+/********* Footer *********/
+footer{
+    background-color: var(--footer-bg-color);
+    padding: 50px 20px;
+}
+
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-logo a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'League Spartan', sans-serif;
+    letter-spacing: 1px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a i{
+    color: var(--logo-color);
+    margin-right: 10px;
+}
+
+.footer-social{
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-social a i{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0px 5px;
+}
 
 
+.footer-social a:hover i{
+    color: #228B22;
+}
 
+.footer-links strong{
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer-links ul{
+    margin-top: 10px;
+}
+
+.footer-links ul li a{
+    color: var(--white-color);
+    opacity: 0.5;
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+
+.footer-links li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
