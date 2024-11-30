@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <!-------------------------- CSS ---------------------------->
+    <link rel="stylesheet" href="css/groceryui.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-------------------------- End of CSS ---------------------------->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--------------------------- Nav Bar ------------------------------->
+    <nav class="navigation">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-leaf"></i>épicerie
+        </a>
+        <!------------------Menu--------------------->
+        <ul class="menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+
+        <!-- For Mobile Navigation -->
+        <!--
+        <i class='bx bx-home'></i>
+        <i class='bx bx-cart'></i>
+        <i class='bx bx-search'></i>
+        <i class='bx bx-user'></i>
+        -->
+
+        <!--- Cart Option and Profile -->
+        <div class="right-nav">
+            <a href="#" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+        </div>
+    </nav>
+    <!--------------------------- End of Nav Bar ------------------------------->
+    </div>
+    <!--------------------------- Banner Section ------------------------------->
+
+    <!--------------------------- End of Banner -------------------------------->
+    
+    <!--------------------------- Category Section ------------------------------->
+
+    <section id="category">
+        <div class="category-heading">
+            <h2>Category</h2>
+            <span>View All</span>
+        </div>
+        <!--box-container-->
+        <div class="category-container">
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-fish-fins"></i>
+                <span>Fish & Meat</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-carrot"></i>
+                <span>Fruits & Veggies</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-stroopwafel"></i>
+                <span>Snacks</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-wine-bottle"></i>
+                <span>Beverages</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-bread-slice"></i>
+                <span>Confectionary</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-jar"></i>
+                <span>Oil & Condiments</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-cheese"></i>
+                <span>Dairy</span>
+            </a>
+        </div>
+    </section>
+
+    <!--------------------------- End Of Category Section ------------------------>
+
+    <!--------------------------- Products Section ----------------------->
+    <section id="products-section">
+        <div class="product-heading">
+            <h2>Products</h2>
+            <span>View All</span>
+        </div>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="img/product1.png" alt="Product 1">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label"></span>
+                        <span class="category">Fruits & Veggies</span>
+                    </div>
+                    <h3>Spinach</h3>
+                    <span class="quantity">1KG</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 50</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product2.png" alt="Product 2">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label">American Garden</span>
+                        <span class="category">Oil & Condiments</span>
+                    </div>
+                    <h3>U.S. Mayonnaise</h3>
+                    <span class="quantity">887ML</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 1115</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product3.jpg" alt="Product ">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label">Babybel</span>
+                        <span class="category">Dairy</span>
+                    </div>
+                    <h3>Spinach</h3>
+                    <span class="quantity">20G</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 350</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product4.webp" alt="Product 1">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label">Charles King</span>
+                        <span class="category">Beverages</span>
+                    </div>
+                    <h3>Chardonnay Napa Valley</h3>
+                    <span class="quantity">750ML</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 11500</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product5.jpeg" alt="Product 1">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label">Lay's</span>
+                        <span class="category">Snacks</span>
+                    </div>
+                    <h3>Chile Limón Chips</h3>
+                    <span class="quantity">219.7G</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 75</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product6.jpeg" alt="Product 1">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label">Nature's Own</span>
+                        <span class="category">Confectionary</span>
+                    </div>
+                    <h3>Butterbread</h3>
+                    <span class="quantity">200G</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 150</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="img/product7.png" alt="Product 1">
+                <div class="product-info">
+                    <div class="info-header">
+                        <span class="label">Certified Angus Beef</span>
+                        <span class="category">Fish & Meat</span>
+                    </div>
+                    <h3>Ground Beef Chuck</h3>
+                    <span class="quantity">2.26KG</span>
+                    <div class="p-info-row">
+                        <span class="price">रू 1050</span>
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------End Of Product Section --------------------------->
+
+    <section id="testimonials">
+        <div class="testimonials-heading">
+            <h3>What Our Customers Say</h3>
+        </div>
+        <!---- Testimonials Container -->
+        <div class="testimonials-box-container">
+            <div class="testimonials-box">
+                <div class="testimonial-profile">
+                    <!-- Testimonial Pfp -->
+                    <img src="img/profile1.jpg" alt="Customer 1">
+                    <!-- Testimonial Desc -->
+                     <div class="profile-text">
+                        <strong>Ariana Grande</strong>
+                        <span>Singer / Songwriter</span>
+                     </div>
+                </div>
+                <!-- Rating -->
+                 <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3>"Fantastic Service and Fresh Products!"</h3>
+                <p>I’ve been using [Grocery Site Name] for a few months now, and I’m beyond impressed! The website is easy to navigate, and the product selection is fantastic. I love that they offer a wide range of organic options and hard-to-find specialty items. The delivery service is always prompt, and everything arrives fresh and well-packaged.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/groceryui.js"></script>
+</body>
+</html>
