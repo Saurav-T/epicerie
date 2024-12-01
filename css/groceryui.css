@@ -79,6 +79,10 @@
     position: relative;
 }
 
+.right-nav [class = "profile"]{
+    overflow: hidden;
+}
+
 .right-nav a i{
     color: var(--white-color);
 }
@@ -99,9 +103,18 @@
     background-color: var(--black-color);
 }
 
+.right-nav a img{
+    width: 40px;
+    height: 40px;
+}
+
 .menu li a:hover, .menu .active{
     color: var(--options-color);
     transition: all ease 0.3s;
+}
+
+.mobile-header{
+    display: none;
 }
 /*------------ Banner -----------------*/
 .home{
@@ -374,12 +387,13 @@
 
 .testimonial-profile{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .testimonial-profile img{
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -388,17 +402,24 @@
 .profile-text{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .profile-text strong{
     color: var(--menu-font-color);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+}
+
+.profile-text span{
+    font-size: 0.8rem;
 }
 
 .rating{
     display: flex;
+    justify-self: center;
     margin: 10px 0px;
 }
 
@@ -406,13 +427,22 @@
     color: #ffcc0d;
 }
 
+.testimonials-box h3{
+    text-align: center;
+}
+
 .testimonials-box p{
     color: #7c7c7c;
+    text-align: center;
 }
 
 /***************/
 #partner{
     margin: 100px auto;
+}
+
+.partner-heading{
+    justify-content: center;
 }
 
 .logo-container{
@@ -510,4 +540,172 @@ footer{
 .footer-links li a:hover{
     opacity: 1;
     transition: all ease 0.3s;
+}
+
+@media (max-width: 1200px){
+    .home-text h1{
+        font-size: 2.5rem;
+    }
+    .btn{
+        font-size: 1.0rem;
+    }
+    #products-section{
+        width: 90%;
+    }
+}
+@media (max-width: 1090px){
+    #category,
+    #partner{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1030px){
+    .category-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .category-box{
+        margin: 10px;
+    }
+}
+@media (max-width: 980px){
+    .home-text{
+        width: 75%;
+    }
+    .home-text h1{
+        font-size: 2.0rem;
+    }
+    .testimonials-box-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (max-width: 930px){
+    .product-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 850px){
+    .menu{
+        display: none;
+    }
+    .mobile-header{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        padding: 25px 100px;
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0 0 4px rgb(14 55 54/15%);
+    }
+    .mobile-header ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobile-header li{
+        text-align: center;
+       
+    }
+
+    .mobile-header i{
+        font-size: 25px;
+    }
+
+    .mobile-header span{
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .logo-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-container img{
+        margin: 10px 20px;
+    }
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 100px;
+    }
+
+    .footer-links{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 700px){
+    .product-box .product-info h3{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 625px){
+
+    .product-box .product-info .info-header{
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        gap: 5px;
+    }
+    .no-mobile-display{
+        display: none;
+    }
+    .mobile-header{
+        padding: 25px 50px;
+    }
+    .home-text{
+        width: 90%;
+    }
+    .home-text h1{
+        font-size: 1.9rem;
+    }
+    .btn{
+        font-size: 0.9rem;
+        padding: 0.6rem 0.9rem;
+    }
+}
+
+@media (max-width: 595px){
+    .testimonials-box-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 550px){
+    .mobile-header i{
+        font-size: 20px;
+    }
+    .mobile-header ul{
+        display: space-between;
+    }
+    .product-box .product-info h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+@media(max-width: 520px){
+    .product-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 495px){
+    .home-text{
+        width: 100%;
+    }
+    .home-text h1{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 430px){
+    .mobile-header{
+        padding: 25px;
+    }
 }
