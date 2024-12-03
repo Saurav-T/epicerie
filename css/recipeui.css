@@ -143,12 +143,12 @@
     width: 6px !important;
     height: 6px !important;
     border-radius: 0.2rem !important;
-    background: var(--white-color) !important;
+    background: white !important;
     opacity: 1 !important;
 }
 .swiper-pagination-bullet-active{
     width: 1.5rem !important;
-    background: var(--options-color) !important;
+    background: green !important;
 }
 .home-text{
     z-index: 1000;
@@ -184,7 +184,7 @@
 /*------------ Category --------------*/
 
 #category,
-#products-section,
+#recipes-section,
 #partner{
     display: flex;
     flex-direction: column;
@@ -193,7 +193,7 @@
 }
 
 .category-heading,
-.product-heading,
+.recipe-heading,
 .partner-heading{
     display: flex;
     justify-content: space-between;
@@ -201,7 +201,7 @@
 }
 
 .category-heading h2,
-.product-heading h2,
+.recipe-heading h2,
 .partner-heading h3{
     font-size: 1.56rem;
     font-weight: 700;
@@ -210,7 +210,7 @@
 }
 
 .category-heading span,
-.product-heading span{
+.recipe-heading span{
     color: var(--menu-font-color);
     font-weight: 400;
     letter-spacing: 1px;
@@ -260,18 +260,18 @@
 }
 
 /* Product Section */
-#product-section{
+#recipes-section{
     margin: 80px auto;
 }
 
-.product-container{
+.recipe-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     margin: 40px 0px;
 }
 
-.product-box{
+.recipe-box{
     width: 100%;
     border: 1px solid #eeee;
     background-color: #fff;
@@ -279,20 +279,21 @@
     border-radius: 20px;
 }
 
-.product-box img{
+.recipe-box img{
     width: 100%;
-    height: 180px;
+    height: 130px;
     object-fit: contain;
     object-position: center;
     margin: auto;
 }
 
-.product-box .product-info{
+.recipe-box .recipe-info{
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
-.product-box .product-info .info-header{
+.recipe-box .recipe-info .info-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -300,49 +301,46 @@
     color: var(--menu-font-color);
 }
 
-.product-box .product-info .info-header .label{
+.recipe-box .recipe-info .info-header .label{
     font-size: 0.8rem;
 }
 
-.product-box .product-info .info-header .category{
+.recipe-box .recipe-info .info-header .time{
     font-size: 0.65rem;
     background-color: grey;
     padding: 4px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
     color: var(--white-color)
 }
 
-.product-box .product-info h3{
+.time i{
+    margin-right: 5px;
+}
+
+.recipe-box .recipe-info h3{
     color: var(--black-color);
     font-size: 1.1rem;
     font-weight: 600;
     margin-top: 5px;
 }
 
-.product-box .product-info .quantity{
-    color: var(--menu-font-color);
-    font-size: 0.8rem;
-    font-weight: 500;
-}
 
 .p-info-row{
+    margin-top: 10px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
-.product-box .product-info .p-info-row .price{
-    margin-top: 5px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #393939;
-}
 
 .p-info-row .add-to-cart-btn{
-    padding: 10px;
+    padding: 10px 70px;
     background-color: var(--add-to-cart);
     color: var(--white-color);
-    border-radius: 50%;
+    border-radius: 30px;
+    white-space: nowrap;
 }
 
 .p-info-row .add-to-cart-btn:hover{
@@ -549,7 +547,7 @@ footer{
     .btn{
         font-size: 1.0rem;
     }
-    #products-section{
+    #recipes-section{
         width: 90%;
     }
 }
@@ -582,7 +580,7 @@ footer{
 
 }
 @media (max-width: 930px){
-    .product-container{
+    .recipe-container{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -641,18 +639,18 @@ footer{
     }
 }
 @media (max-width: 700px){
-    .product-box .product-info h3{
+    .recipe-box .recipe-info h3{
         font-size: 0.9rem;
     }
 }
-@media (max-width: 625px){
 
-    .product-box .product-info .info-header{
-        flex-direction: column;
-        justify-content: left;
-        align-items: start;
-        gap: 5px;
+@media (max-width: 640px){
+    .p-info-row .add-to-cart-btn{
+        padding: 10px 40px;
     }
+}
+
+@media (max-width: 625px){
     .no-mobile-display{
         display: none;
     }
@@ -684,7 +682,7 @@ footer{
     .mobile-header ul{
         display: space-between;
     }
-    .product-box .product-info h3{
+    .recipe-box .recipe-info h3{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -692,8 +690,12 @@ footer{
 
 }
 @media(max-width: 520px){
-    .product-container{
+    .recipe-container{
         grid-template-columns: 1fr;
+    }
+
+    .p-info-row .add-to-cart-btn{
+        padding: 10px 70px;
     }
 }
 @media(max-width: 495px){

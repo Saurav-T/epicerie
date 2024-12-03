@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <!-------------------------- CSS ---------------------------->
+    <link rel="stylesheet" href="css/recipeui.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-------------------------- End of CSS ---------------------------->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--------------------------- Nav Bar ------------------------------->
+    <nav class="navigation">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-leaf"></i>épicerie
+        </a>
+        <!------------------Menu--------------------->
+        <ul class="menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        
+        <!--- Cart Option and Profile -->
+        <div class="right-nav">
+            <a href="#" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+            <a href="#" class="profile">
+               <img src="img/profile.webp" alt="P">
+            </a>
+        </div>
+    </nav>
+    <div class="mobile-header">
+        <ul class="navbar">
+            <li><a href="#home" class="home-active"><i class="fa-solid fa-house"></i><br><span>Home</span></a></li>
+            <li><a href="#movies"><i class="fa-solid fa-list"></i><br><span>Categories</span></a></li>
+            <li><a href="#tickets"><i class="fa-solid fa-book"></i><br><span>recipes</span></a></li>
+            <li><a href="#support"><i class='bx bx-support' ></i><br><span>Support</span></a></li>
+        </ul>
+    </div>
+    <!--------------------------- End of Nav Bar ------------------------------->
+    </div>
+    <!--------------------------- Banner Section ------------------------------->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+               <div class="food-image">
+                    <img src="img/home1.jpg">
+               </div>
+                <div class="home-text">
+                    <h1>Harvested with Care, Packed with Flavor</h1>
+                    <a href="" class="btn">Shop Now</a>
+                </div>
+            </div>
+          <div class="swiper-pagination"></div>
+    </section>
+    <!--------------------------- End of Banner -------------------------------->
+    
+    <!--------------------------- Category Section ------------------------------->
+
+    <section id="category">
+        <div class="category-heading">
+            <h2>Category</h2>
+            <span>View All</span>
+        </div>
+        <!--box-container-->
+        <div class="category-container">
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-bacon"></i>
+                <span>Breakfast</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fas fa-hamburger"></i>
+                <span>Lunch</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fas fa-cookie"></i>
+                <span>Snacks</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fas fa-utensils"></i>
+                <span>Dinner</span>
+            </a>
+            <a href="#" class="category-box no-mobile-display">
+                <i class="fas fa-ice-cream"></i>
+                <span>Dessert</span>
+            </a>
+            <a href="#" class="category-box no-mobile-display">
+                <i class="fa-solid fa-wine-glass-alt"></i>
+                <span>Drinks</span>
+            </a>
+            <a href="#" class="category-box no-mobile-display">
+                <i class="fa-solid fa-hourglass-start"></i>
+                <span>Quick and Easy</span>
+            </a>
+        </div>
+    </section>
+
+    <!--------------------------- End Of Category Section ------------------------>
+
+    <!--------------------------- recipes Section ----------------------->
+    <section id="recipes-section">
+        <div class="recipe-heading">
+            <h2>Recommended For You</h2>
+            <span>View All</span>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-box">
+                <div class="recipe-img">
+                <img src="img/recipe-img/recipe1.jpg" alt="recipe 1">
+                </div>
+                <div class="recipe-info">
+                    <div class="info-header">
+                        <span class="label">Breakfast</span>
+                        <span class="time"><i class="fa-solid fa-clock"></i><p>10 Min</p></span>
+                    </div>
+                    <h3>Savory French Toast</h3>
+                    <div class="p-info-row">
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            View Recipe
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-box">
+                <img src="img/product1.png" alt="recipe 1">
+                <div class="recipe-info">
+                    <div class="info-header">
+                        <span class="label">Breakfast</span>
+                        <span class="time"><i class="fa-solid fa-clock"></i><p>10 Min</p></span>
+                    </div>
+                    <h3>Savory French Toast</h3>
+                    <div class="p-info-row">
+                        <a href="#add-to-cart" class="add-to-cart-btn">
+                            View Recipe
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------End Of recipe Section --------------------------->
+    <section id="testimonials">
+        <div class="testimonials-heading">
+            <h3>What Our Customers Say</h3>
+        </div>
+        <!---- Testimonials Container -->
+        <div class="testimonials-box-container">
+            <div class="testimonials-box">
+                <div class="testimonial-profile">
+                    <!-- Testimonial Pfp -->
+                    <img src="img/testimonial1.webp" alt="Customer 1">
+                    <!-- Testimonial Desc -->
+                </div>
+                <div class="profile-text">
+                    <strong>Abel Tesfaye</strong>
+                    <span>Singer / Songwriter</span>
+                 </div>
+                <!-- Rating -->
+                 <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3>"Fantastic Service and Fresh recipes!"</h3>
+                <p>Epicerie makes grocery shopping so much easier. Great selection, quick delivery, and always fresh!</p>
+            </div>
+            <div class="testimonials-box">
+                <div class="testimonial-profile">
+                    <!-- Testimonial Pfp -->
+                    <img src="img/testimonial2.jpeg" alt="Customer 1">
+                    <!-- Testimonial Desc -->
+                </div>
+                <div class="profile-text">
+                    <strong>Mitski</strong>
+                    <span>Singer / Songwriter</span>
+                 </div>
+                <!-- Rating -->
+                 <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3>"Convenient and Reliable!"</h3>
+                <p>I’ve had a great experience with Epicerie. Fast delivery, fresh recipes, and easy to navigate. Will definitely keep shopping here!</p>
+            </div>
+            <div class="testimonials-box">
+                <div class="testimonial-profile">
+                    <!-- Testimonial Pfp -->
+                    <img src="img/profile.webp" alt="Customer 1">
+                    <!-- Testimonial Desc -->
+                </div>
+                <div class="profile-text">
+                    <strong>Ariana Grande</strong>
+                    <span>Singer / Songwriter</span>
+                 </div>
+                <!-- Rating -->
+                 <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3>"Best Online Grocery Store!"</h3>
+                <p>I love shopping with Epicerie! The site is easy to use, delivery is fast, and everything arrives fresh. Highly recommend for a seamless grocery experience!</p>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------End Of Testimonials------------------------->
+
+    <!----------------------------- Partners Section -------------------------->
+    <section id="partner">
+        <div class="partner-heading">
+            <h3>Our Trusted Partners</h3>
+        </div>
+
+        <!-------------- Logo Container ----------------->
+        <div class="logo-container">
+            <img src="img/logo1.png" alt="logo 1">
+            <img src="img/logo2.png" alt="logo 2">
+            <img src="img/logo3.png" alt="logo 3">
+            <img src="img/logo4.png" alt="logo 4">
+        </div>
+    </section>
+    <!-------------------------------Partner Section End ----------------------------->
+    <!------------------------------------- Footer ----------------------------------->
+    <footer>
+        <div class="footer-container">
+            <!----- Logo Container ------>
+            <div class="footer-logo">
+                <a href="#">
+                    <i class="fa-solid fa-leaf"></i>épicerie
+                </a>
+                <div class="footer-social">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <strong>recipe</strong>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>recipe</strong>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>recipe</strong>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/recipeui.js"></script>
+    <!------->
+</body>
+</html>
