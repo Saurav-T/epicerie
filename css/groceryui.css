@@ -611,8 +611,19 @@ footer{
        
     }
 
+    .mobile-header i, .mobile-header span{
+        color: var(--black-color);
+    }
+
     .mobile-header i{
         font-size: 25px;
+    }
+
+    .mobile-header .navbar li a:hover i, .mobile-header .navbar li a:hover span{
+        color: var(--add-to-cart)
+    }
+    .mobile-header .navbar li a:active i, .mobile-header .navbar li a:active span{
+        color: var(--logo-color)
     }
 
     .mobile-header span{

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <!-------------------------- CSS ---------------------------->
+    <link rel="stylesheet" href="../css/groceryui.css">
+    <link rel="stylesheet" href="../css/searchbar.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-------------------------- End of CSS ---------------------------->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--------------------------- Nav Bar ------------------------------->
+    <nav class="navigation">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-leaf"></i>épicerie
+        </a>
+        <!------------------Menu--------------------->
+        <ul class="menu">
+            <li><a href="../index.html" class="">Home</a></li>
+            <li><a href="/groceryUIPages/categories.html" class="active">Categories</a></li>
+            <li><a href="/groceryUIPages/products.html">Products</a></li>
+            <li><a href="#Recipes">Recipes</a></li>
+        </ul>
+        
+        <!--- Cart Option and Profile -->
+        <div class="right-nav">
+            <a href="#" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
+            </a>
+            <a href="#" class="profile">
+               <img src="../img/profile.webp" alt="P">
+            </a>
+        </div>
+    </nav>
+    <div class="mobile-header">
+        <ul class="navbar">
+            <li><a href="../index.html" class=""><i class="fa-solid fa-house"></i><br><span>Home</span></a></li>
+            <li><a href="/groceryUIPages/categories.html"><i class="fa-solid fa-list"></i><br><span>Categories</span></a></li>
+            <li><a href="/groceryUIPages/products.html"><i class="fa-solid fa-basket-shopping"></i><br><span>Products</span></a></li>
+            <li><a href="#Recipes"><i class="fa-solid fa-seedling"></i><br><span>Recipes</span></a></li>
+        </ul>
+    </div>
+    <!--------------------------- End of Nav Bar ------------------------------->
+    </div>
+    <section id="category">
+        <div class="category-heading">
+            <h2>Category</h2>
+            <form action="" id="search-bar">
+                <input type="text" name="search" placeholder="Search..." class="searchbar">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!--box-container-->
+        <div class="category-container">
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-fish-fins"></i>
+                <span>Fish & Meat</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-carrot"></i>
+                <span>Fruits & Veggies</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-stroopwafel"></i>
+                <span>Snacks</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-wine-bottle"></i>
+                <span>Beverages</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-bread-slice"></i>
+                <span>Confectionary</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-jar"></i>
+                <span>Oil & Condiments</span>
+            </a>
+            <a href="#" class="category-box">
+                <i class="fa-solid fa-cheese"></i>
+                <span>Dairy</span>
+            </a>
+        </div>
+    </section>
+
+    <!--------------------------- End Of Category Section ------------------------>
+
+    <!--------------------------- Products Section ----------------------->
+    <!------------------------------------- Footer ----------------------------------->
+    <footer>
+        <div class="footer-container">
+            <!----- Logo Container ------>
+            <div class="footer-logo">
+                <a href="#">
+                    <i class="fa-solid fa-leaf"></i>épicerie
+                </a>
+                <div class="footer-social">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

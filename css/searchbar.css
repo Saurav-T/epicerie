@@ -1,0 +1,65 @@
+#search-bar .searchbar{
+    outline: none;
+    border-radius: 20px;
+    border: 3px solid #44b844;
+    padding: 5px;
+}
+
+#search-bar .searchbar:focus {
+    border: 3px solid #228B22;
+    caret-color: #44b844;
+}
+
+#search-bar button{
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    font-size: 12px;
+    margin-left: 3px;
+    padding: 5px 6px;
+    border: 1px solid grey;
+}
+
+#search-bar button:hover{
+    background-color: #44b844;
+    border-color: #44b844;
+    color: #fff;
+}
+
+#search-bar button:active{
+    background-color: #228B22;
+    border-color: #228B22;
+    color: #fff;
+}
+
+@media (max-width: 450px){
+    #products-section h2{
+        text-align: center;
+    }
+    #products-section .product-heading{
+        display: block;
+    }
+    
+    #search-bar{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #search-bar .searchbar{
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px){
+    #search-bar .searchbar{
+       display: block;
+       width: 100%;
+    }
+
+    #search-bar button{
+       position: absolute;
+       right: 20px;
+       margin-top: 5px;
+    }
+
+}

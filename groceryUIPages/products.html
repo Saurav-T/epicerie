@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store</title>
     <!-------------------------- CSS ---------------------------->
-    <link rel="stylesheet" href="css/groceryui.css">
+    <link rel="stylesheet" href="../css/groceryui.css">
+    <link rel="stylesheet" href="../css/searchbar.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-------------------------- End of CSS ---------------------------->
@@ -21,10 +22,10 @@
         </a>
         <!------------------Menu--------------------->
         <ul class="menu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="/groceryUIPages/products.html">Products</a></li>
-            <li><a href="#">Recipes</a></li>
+            <li><a href="./index.html" class="">Home</a></li>
+            <li><a href="/groceryUIPages/categories.html">Categories</a></li>
+            <li><a href="/groceryUIPages/products.html" class="active">Products</a></li>
+            <li><a href="#Recipes">Recipes <i class="fa-solid fa-seedling"></i></a></li>
         </ul>
         
         <!--- Cart Option and Profile -->
@@ -34,109 +35,32 @@
                 <span>0</span>
             </a>
             <a href="#" class="profile">
-               <img src="img/profile.webp" alt="P">
+               <img src="../img/profile.webp" alt="P">
             </a>
         </div>
     </nav>
     <div class="mobile-header">
         <ul class="navbar">
-            <li><a href="#home" class="home-active"><i class="fa-solid fa-house"></i><br><span>Home</span></a></li>
-            <li><a href="#movies"><i class="fa-solid fa-list"></i><br><span>Categories</span></a></li>
+            <li><a href="../index.html" class="home-active"><i class="fa-solid fa-house"></i><br><span>Home</span></a></li>
+            <li><a href="/groceryUIPages/categories.html"><i class="fa-solid fa-list"></i><br><span>Categories</span></a></li>
             <li><a href="/groceryUIPages/products.html"><i class="fa-solid fa-basket-shopping"></i><br><span>Products</span></a></li>
-            <li><a href="#support"><i class="fa-solid fa-seedling"></i><br><span>Recipes</span></a></li>
+            <li><a href="#Recipes"><i class="fa-solid fa-seedling"></i><br><span>Recipes</span></a></li>
         </ul>
     </div>
     <!--------------------------- End of Nav Bar ------------------------------->
     </div>
-    <!--------------------------- Banner Section ------------------------------->
-    <section class="home swiper" id="home">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide container">
-                <img src="./img/home1.jpg" alt="">
-                <div class="home-text">
-                    <h1>Harvested with Care, Packed with Flavor</h1>
-                    <a href="" class="btn">Shop Now</a>
-                </div>
-            </div>
-            <div class="swiper-slide container">
-                <img src="./img/home2.webp" alt="">
-                <div class="home-text">
-                    <span>SANTITAS</span>
-                    <h1>Unwrap the Crunch, Enjoy the Flavor</h1>
-                    <a href="" class="btn">Shop Now</a>
-                </div>
-            </div>
-            <div class="swiper-slide container">
-                <img src="./img/home3.png" alt="">
-                <div class="home-text">
-                    <h1>The Secret Ingredient for Every Meal</h1>
-                    <a href="" class="btn">Shop Now</a>
-                </div>
-            </div>
-            <div class="swiper-slide container">
-                <img src="./img/home4.jpg" alt="">
-                <div class="home-text">
-                    <span>From Cart to Kitchen: </span>
-                    <h1>Recipes That Make the Most of Your Groceries</h1>
-                    <a href="" class="btn">Check Out</a>
-                </div>
-            </div>            
-          </div>
-          <div class="swiper-pagination"></div>
-    </section>
-    <!--------------------------- End of Banner -------------------------------->
-    
-    <!--------------------------- Category Section ------------------------------->
-
-    <section id="category">
-        <div class="category-heading">
-            <h2>Category</h2>
-            <span>View All</span>
-        </div>
-        <!--box-container-->
-        <div class="category-container">
-            <a href="#" class="category-box">
-                <i class="fa-solid fa-fish-fins"></i>
-                <span>Fish & Meat</span>
-            </a>
-            <a href="#" class="category-box">
-                <i class="fa-solid fa-carrot"></i>
-                <span>Fruits & Veggies</span>
-            </a>
-            <a href="#" class="category-box">
-                <i class="fa-solid fa-stroopwafel"></i>
-                <span>Snacks</span>
-            </a>
-            <a href="#" class="category-box">
-                <i class="fa-solid fa-wine-bottle"></i>
-                <span>Beverages</span>
-            </a>
-            <a href="#" class="category-box no-mobile-display">
-                <i class="fa-solid fa-bread-slice"></i>
-                <span>Confectionary</span>
-            </a>
-            <a href="#" class="category-box no-mobile-display">
-                <i class="fa-solid fa-jar"></i>
-                <span>Oil & Condiments</span>
-            </a>
-            <a href="#" class="category-box no-mobile-display">
-                <i class="fa-solid fa-cheese"></i>
-                <span>Dairy</span>
-            </a>
-        </div>
-    </section>
-
-    <!--------------------------- End Of Category Section ------------------------>
-
     <!--------------------------- Products Section ----------------------->
     <section id="products-section">
         <div class="product-heading">
             <h2>Products</h2>
-            <span>View All</span>
+            <form action="" id="search-bar">
+                <input type="text" name="search" placeholder="Search..." class="searchbar">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
         <div class="product-container">
             <div class="product-box">
-                <img src="img/product1.png" alt="Product 1">
+                <img src="../img/product1.png" alt="Product 1">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label"></span>
@@ -153,7 +77,7 @@
                 </div>
             </div>
             <div class="product-box">
-                <img src="img/product2.png" alt="Product 2">
+                <img src="../img/product2.png" alt="Product 2">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label">American Garden</span>
@@ -170,7 +94,7 @@
                 </div>
             </div>
             <div class="product-box">
-                <img src="img/product3.jpg" alt="Product ">
+                <img src="../img/product3.jpg" alt="Product ">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label">Babybel</span>
@@ -187,7 +111,7 @@
                 </div>
             </div>
             <div class="product-box">
-                <img src="img/product4.webp" alt="Product 1">
+                <img src="../img/product4.webp" alt="Product 1">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label">Charles King</span>
@@ -204,7 +128,7 @@
                 </div>
             </div>
             <div class="product-box">
-                <img src="img/product5.jpeg" alt="Product 1">
+                <img src="../img/product5.jpeg" alt="Product 1">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label">Lay's</span>
@@ -221,7 +145,7 @@
                 </div>
             </div>
             <div class="product-box">
-                <img src="img/product6.jpeg" alt="Product 1">
+                <img src="../img/product6.jpeg" alt="Product 1">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label">Nature's Own</span>
@@ -238,7 +162,7 @@
                 </div>
             </div>
             <div class="product-box">
-                <img src="img/product7.png" alt="Product 1">
+                <img src="../img/product7.png" alt="Product 1">
                 <div class="product-info">
                     <div class="info-header">
                         <span class="label">Certified Angus Beef</span>
@@ -257,94 +181,6 @@
         </div>
     </section>
     <!--------------------------End Of Product Section --------------------------->
-    <section id="testimonials">
-        <div class="testimonials-heading">
-            <h3>What Our Customers Say</h3>
-        </div>
-        <!---- Testimonials Container -->
-        <div class="testimonials-box-container">
-            <div class="testimonials-box">
-                <div class="testimonial-profile">
-                    <!-- Testimonial Pfp -->
-                    <img src="img/testimonial1.webp" alt="Customer 1">
-                    <!-- Testimonial Desc -->
-                </div>
-                <div class="profile-text">
-                    <strong>Abel Tesfaye</strong>
-                    <span>Singer / Songwriter</span>
-                 </div>
-                <!-- Rating -->
-                 <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>"Fantastic Service and Fresh Products!"</h3>
-                <p>Epicerie makes grocery shopping so much easier. Great selection, quick delivery, and always fresh!</p>
-            </div>
-            <div class="testimonials-box">
-                <div class="testimonial-profile">
-                    <!-- Testimonial Pfp -->
-                    <img src="img/testimonial2.jpeg" alt="Customer 1">
-                    <!-- Testimonial Desc -->
-                </div>
-                <div class="profile-text">
-                    <strong>Mitski</strong>
-                    <span>Singer / Songwriter</span>
-                 </div>
-                <!-- Rating -->
-                 <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>"Convenient and Reliable!"</h3>
-                <p>I’ve had a great experience with Epicerie. Fast delivery, fresh products, and easy to navigate. Will definitely keep shopping here!</p>
-            </div>
-            <div class="testimonials-box">
-                <div class="testimonial-profile">
-                    <!-- Testimonial Pfp -->
-                    <img src="img/profile.webp" alt="Customer 1">
-                    <!-- Testimonial Desc -->
-                </div>
-                <div class="profile-text">
-                    <strong>Ariana Grande</strong>
-                    <span>Singer / Songwriter</span>
-                 </div>
-                <!-- Rating -->
-                 <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>"Best Online Grocery Store!"</h3>
-                <p>I love shopping with Epicerie! The site is easy to use, delivery is fast, and everything arrives fresh. Highly recommend for a seamless grocery experience!</p>
-            </div>
-        </div>
-    </section>
-    <!-----------------------------End Of Testimonials------------------------->
-
-    <!----------------------------- Partners Section -------------------------->
-    <section id="partner">
-        <div class="partner-heading">
-            <h3>Our Trusted Partners</h3>
-        </div>
-
-        <!-------------- Logo Container ----------------->
-        <div class="logo-container">
-            <img src="img/logo1.png" alt="logo 1">
-            <img src="img/logo2.png" alt="logo 2">
-            <img src="img/logo3.png" alt="logo 3">
-            <img src="img/logo4.png" alt="logo 4">
-        </div>
-    </section>
-    <!-------------------------------Partner Section End ----------------------------->
     <!------------------------------------- Footer ----------------------------------->
     <footer>
         <div class="footer-container">
@@ -397,11 +233,5 @@
             </div>
         </div>
     </footer>
-    
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/groceryui.js"></script>
-    <!------->
 </body>
 </html>
