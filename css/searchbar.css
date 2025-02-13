@@ -33,10 +33,10 @@
 }
 
 @media (max-width: 450px){
-    #products-section h2{
+    #products-section h2, #category h2{
         text-align: center;
     }
-    #products-section .product-heading{
+    #products-section .product-heading, #category .category-heading{
         display: block;
     }
     
