@@ -10,3 +10,4 @@ var swiper = new Swiper('.home', {
         delay: 3000,
     },
 });
+

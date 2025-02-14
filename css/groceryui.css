@@ -118,6 +118,8 @@
 .mobile-header {
     display: none;
 }
+/*--------------Profile-drop-down--------*/
+
 /*------------ Banner -----------------*/
 .home{
     padding: 4.5rem 0 1.5rem;
@@ -602,6 +604,9 @@
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+}
+.checkout-btn a, .checkout-btn a:hover{
+    color:#f3f3f3;
 }
 .remove-item{
     background: var(--options-color);
